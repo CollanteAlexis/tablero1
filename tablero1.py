@@ -58,9 +58,9 @@ with steps[1]:
     varx = st.selectbox('Selecciona una métrica de la campaña:', id3.ID_Metrica, help = 'Selecciona una métrica para gráficar')
     id4 = metricas_df[(metricas_df['ID_Metrica'] == varx)]#|(metricas_df['ID_Campana'] == 1)]
     
-    fig, ax = plt.subplots()
+    fig, ax = pd.subplots()
     
-    ax = sns.scatterplot(
+    ax = pd.scatterplot(
     data=id4,
     x='ID_Metrica',
     y='Conversiones',
@@ -69,8 +69,8 @@ with steps[1]:
     
     ax.set_xlabel('Métrica')
     
-    plt.ylim(0, 20)
-    plt.xlim(0, 80)
+    pd.ylim(0, 20)
+    pd.xlim(0, 80)
     
     st.pyplot(fig)
     
