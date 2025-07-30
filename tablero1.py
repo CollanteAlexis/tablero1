@@ -7,19 +7,19 @@ import seaborn as sns
 st.set_page_config(layout="centered", page_title="Talento_Tech2", page_icon=":smile:")
 
 t1, t2 = st.columns([0.3, 0.7])
-t1.image('DATA_SL/TT1.jpg')#, width = 200)
+t1.image('TT1.jpg')#, width = 200)
 t2.title('Tablero de prueba')
 t2.markdown('**tel:** 3207996687 | **email:** alexis.collante@udea.edu.co')
 
-campanhas_df = pd.read_csv('DATA_SL/Campanhas.csv', encoding='latin-1', sep=';')
-audiencias_df = pd.read_csv('DATA_SL/Audiencias.csv', encoding='latin-1', sep=';')
-metricas_df = pd.read_csv('DATA_SL/Metricas.csv', encoding='latin-1', sep=';')
+campanhas_df = pd.read_csv('Campanhas.csv', encoding='latin-1', sep=';')
+audiencias_df = pd.read_csv('Audiencias.csv', encoding='latin-1', sep=';')
+metricas_df = pd.read_csv('Metricas.csv', encoding='latin-1', sep=';')
 
 steps = st.tabs(['Pestaña 1', 'Pestaña 2', 'Pestaña 3'])
 with steps[0]:
     st.markdown('# **Pestaña 1**')
     
-    st.image('DATA_SL/TT2.jpg', width=10000)
+    st.image('TT2.jpg', width=10000)
     
     df = pd.DataFrame({'Nombre': ['Adán', 'Eva'], 
                       'Edad': [30, 28],
