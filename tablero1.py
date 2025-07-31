@@ -60,7 +60,7 @@ with steps[1]:
     varx = st.selectbox('Selecciona una métrica de la campaña:', id3.ID_Metrica, help = 'Selecciona una métrica para gráficar')
     id4 = metricas_df[(metricas_df['ID_Metrica'] == varx)]#|(metricas_df['ID_Campana'] == 1)]
     
-    fig, ax = plot.subplots()
+    fig, ax = plt.subplots()
     
     ax = sns.scatterplot(
     data=id4,
